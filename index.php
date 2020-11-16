@@ -2,9 +2,14 @@
 // For this application, we will use openweathermap. Get your key here!
 $apiKey = "3e74f3e4932049372e08b6798fa9f867";
 $cityId = "2988507"; // ID for Paris, France
+$cityName = "Paris";
 
-// now, we have our url using our cityId and our apiKey . Warning, i use lang=en here but you can use an other language
-$apiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=metric&APPID=" . $apiKey;
+// U can use research with Id, i prefer use with Name!
+// $apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" . $cityId . "&lang=en&units=metric&APPID=" . $apiKey;
+
+// we will use cityName from now
+$apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" . $cityName . "&appid=" . $apiKey;
+
 
 // Initialize curl.
 $ch = curl_init();
