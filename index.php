@@ -1,6 +1,6 @@
 <?php
-// For this application, we will use openweathermap. Get your key here!
-$apiKey = "3e74f3e4932049372e08b6798fa9f867";
+// For this application, we will use openweathermap. Get your key !
+$apiKey = "YOUR KEY";
 $cityId = "2988507"; // ID for Paris, France
 $cityName = "Paris";
 
@@ -8,7 +8,7 @@ $cityName = "Paris";
 // $apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" . $cityId . "&lang=en&units=metric&APPID=" . $apiKey;
 
 // we will use cityName from now
-$apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" . $cityName . "&appid=" . $apiKey;
+$apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" . $cityName . "&lang=en&units=metric&appid=" . $apiKey;
 
 
 // Initialize curl.
